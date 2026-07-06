@@ -1,0 +1,24 @@
+services:
+  cognita-analytics:
+    image: cognita-analytics:latest
+    container_name: cognita-analytics
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    restart: unless-stopped
+
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+
+    networks:
+      - vlan_internal
+    
+    ports:
+      - "3000:3000"
+
+networks:
+  vlan_internal:
+    external: true
