@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Necessário para GitHub Pages
+  output: 'export',
+  // O basePath deve ser exatamente o nome do seu repositório no GitHub
+  // Exemplo: se o seu repositório é ://github.com, use '/meu-projeto'
+  basePath: '/portifolio', 
   images: {
-    unoptimized: true, // Necessário pois o GitHub não tem servidor de imagem
+    unoptimized: true,
   },
-  // Se seu repo NÃO for "usuario.github.io", descomente a linha abaixo e ponha o nome dele:
-  // basePath: '/portifolio', 
 };
 
-export default nextConfig; // ✅ Use isto em vez de module.exports
+export default nextConfig;
