@@ -1,36 +1,11 @@
-/** @type {import('next').NextConfig} 
-const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-}
-
-export default nextConfig
-**/
-
-/** @type {import('next').NextConfig} 
-const nextConfig = {
-  output: 'export', // Ativa a exportação estática
-  basePath: '/portifolio', // Substitua pelo nome exato do seu repo no GitHub
-  assetPrefix: '/portifolio/', // Substitua pelo nome exato do seu repo no GitHub
-  images: {
-    unoptimized: true, // Necessário pois o GitHub Pages não suporta otimização de imagens do Next.js
-  },
-};
-**/
-
-module.exports = nextConfig;
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'export', // Necessário para GitHub Pages
   images: {
-    unoptimized: true,
+    unoptimized: true, // Necessário pois o GitHub não tem servidor de imagem
   },
-  // Adicione basePath e assetPrefix apenas se o nome do seu repo NÃO for seu-usuario.github.io
-   basePath: '/portifolio',
+  // Se seu repo NÃO for "usuario.github.io", descomente a linha abaixo e ponha o nome dele:
+  // basePath: '/portifolio', 
 };
 
-export default nextConfig; // ✅ Forma correta para .mjs
+export default nextConfig; // ✅ Use isto em vez de module.exports
