@@ -1,4 +1,5 @@
 import { Mail } from "lucide-react"
+import { WhatsappIcon } from "@/components/brand-icons"
 import { profile } from "@/lib/portfolio-data"
 
 export function ContactSection() {
@@ -13,17 +14,17 @@ export function ContactSection() {
       </p>
       <a
         href={profile.socials.email}
-        className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+        className="mt-4 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
       >
         <Mail className="size-4" />
-        {profile.email}
+        E-mail
       </a>
       <a
         href={profile.socials.whatsapp}
-        className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+        className="mt-4 inline-flex items-center gap-2 rounded-md bg-green-500 px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
       >
-        
-        {profile.socials.whatsapp}
+        <WhatsappIcon className="size-4" />
+        WhatsApp
       </a>
       <p className="mt-10 font-mono text-xs text-muted-foreground">
         {profile.location}
