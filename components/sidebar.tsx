@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Mail } from "lucide-react"
-import { GithubIcon, LinkedinIcon } from "@/components/brand-icons"
+import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/brand-icons"
 import { profile } from "@/lib/portfolio-data"
 import { cn } from "@/lib/utils"
 
@@ -101,6 +101,17 @@ export function Sidebar() {
           >
             <span className="sr-only">LinkedIn</span>
             <LinkedinIcon className="size-5" />
+          </a>
+        </li>
+        <li>
+          <a
+            href={profile.socials.whatsapp}
+            target="_blank"
+            rel="noreferrer"
+            className="text-muted-foreground transition-colors hover:text-accent"
+          >
+            <span className="sr-only">WhatsApp</span>
+            <WhatsappIcon className="size-5" />
           </a>
         </li>
         <li>

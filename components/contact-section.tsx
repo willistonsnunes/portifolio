@@ -18,8 +18,15 @@ export function ContactSection() {
         <Mail className="size-4" />
         {profile.email}
       </a>
+      <a
+        href={profile.socials.whatsapp}
+        className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+      >
+        <WhatsappIcon className="size-4" />
+        {profile.socials.whatsapp}
+      </a>
       <p className="mt-10 font-mono text-xs text-muted-foreground">
-        {profile.location} · Desenvolvido com Next.js e Tailwind CSS
+        {profile.location}
       </p>
     </section>
   )

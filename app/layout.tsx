@@ -14,10 +14,10 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Lucas Ferreira — Engenheiro de Dados',
+  title: 'Williston Nunes — Engenheiro de Dados',
   description:
-    'Portfólio de Lucas Ferreira, Engenheiro de Dados. Pipelines, data lakes, orquestração e projetos open source.',
-  generator: 'v0.app',
+    'Portfólio de Williston Nunes, Engenheiro de Dados. Pipelines, data lakes, orquestração e projetos open source.',
+  generator: 'williston.nunes',
   icons: {
     icon: [
       {

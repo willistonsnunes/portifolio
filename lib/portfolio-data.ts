@@ -8,12 +8,13 @@ export const profile = {
     "Atualmente trabalho com orquestração de pipelines em batch e streaming, modelagem dimensional e otimização de custos em data warehouses na nuvem. Gosto de instrumentar tudo com métricas e alertas para que os dados cheguem corretos e no tempo certo.",
     "Nas horas vagas, escrevo relatórios técnicos, contribuo com projetos open source e experimento novas ferramentas do ecossistema de dados.",
   ],
-  location: "São Paulo, Brasil",
+  location: "São Luís - MA, Brasil",
   email: "willistonsousanunes@gmail.com",
   resumeUrl: "#",
   socials: {
     github: "https://github.com/willistonsnunes",
     linkedin: "https://linkedin.com/in/williston-sousa-nunes-12986b80/",
+    whatsapp: "https://wa.me/55998981956232",
     email: "mailto:willistonsousanunes@gmail.com",
   },
 }
@@ -25,12 +26,11 @@ export const skills = [
   "dbt",
   "Apache Spark",
   "Kafka",
-  "Snowflake",
-  "BigQuery",
   "Databricks",
   "Docker",
-  "Terraform",
-  "AWS",
+  "PowerBI",
+  "QlikSense/QlikView",
+  "Microsoft Fabric"
 ]
 
 export type Project = {

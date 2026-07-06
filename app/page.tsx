@@ -20,8 +20,8 @@ export default function Page() {
             <div className="flex flex-col gap-20 lg:gap-28">
               <AboutSection />
               <ProjectsSection />
-              <GithubSection />
               <ReportsSection />
+              <GithubSection />
               <ContactSection />
             </div>
           </main>
