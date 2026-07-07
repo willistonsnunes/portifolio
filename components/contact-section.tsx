@@ -14,14 +14,14 @@ export function ContactSection() {
       </p>
       <a
         href={profile.socials.email}
-        className="mt-4 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+        className="mt-6 p-1 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
       >
         <Mail className="size-4" />
         E-mail
       </a>
       <a
         href={profile.socials.whatsapp}
-        className="mt-4 inline-flex items-center gap-2 rounded-md bg-green-500 px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+        className="mt-6 p-1 inline-flex items-center gap-2 rounded-md bg-green-500 px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
       >
         <WhatsappIcon className="size-4" />
         WhatsApp
